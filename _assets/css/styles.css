@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(203, 226, 255, 0.5);
+}
+
+body.dark-mode {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2vh 0;
+}
+
+.square {
+  text-align: center;
+  width: 80px;
+  background-color: #eee;
+  display: inline-block;
+  padding: 40px;
+  font-size: 60px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  color: #eee;
+}
+
+.display-player,
+.winner {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.restart-button > button,
+.change-mode > button {
+  font-family: 'Quicksand', sans-serif;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 42px;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  background: linear-gradient(to bottom, #32423e 5%, #30adad 100%);
+  background-color: #32423e;
+  box-shadow: inset 0px 1px 0px 0px #91b8b3;
+  font-size: 20px;
+  margin: 20px;
+  text-shadow: 0px 0px 7px #2b665e;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  transition: 1s ease-in-out;
+}
+
+.restart-button > button:hover,
+.change-mode > button:hover {
+  background: linear-gradient(to bottom, #30adad 5%, #32423e 100%);
+  background-color: #30adad;
+}
+
+button:active {
+  position: relative;
+  top: 3px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}

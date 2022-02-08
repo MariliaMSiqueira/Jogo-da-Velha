@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="_assets/css/styles.css" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1># Jogo da velha #</h1>
+      <div>
+        <div id="1" class="square" onclick="clickSquare(this.id)">-</div>
+        <div id="2" class="square" onclick="clickSquare(this.id)">-</div>
+        <div id="3" class="square" onclick="clickSquare(this.id)">-</div>
+      </div>
+      <div>
+        <div id="4" class="square" onclick="clickSquare(this.id)">-</div>
+        <div id="5" class="square" onclick="clickSquare(this.id)">-</div>
+        <div id="6" class="square" onclick="clickSquare(this.id)">-</div>
+      </div>
+      <div>
+        <div id="7" class="square" onclick="clickSquare(this.id)">-</div>
+        <div id="8" class="square" onclick="clickSquare(this.id)">-</div>
+        <div id="9" class="square" onclick="clickSquare(this.id)">-</div>
+      </div>
+
+      <div class="display-player">
+        <label for=""> Sua vez jogador </label>
+        <label id="current-player" for=""> </label>
+      </div>
+      <div class="winner">
+        <label for="">Vencedor : </label>
+        <label id="current-winner" for=""></label>
+      </div>
+      <div class="btns">
+        <div class="restart-button">
+          <button onclick="restart()">Reiniciar</button>
+        </div>
+        <div class="change-mode">
+          <button class="change-mode" id="change-mode">Dark-Mode</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="_assets/js/scripts.js"></script>
+  </body>
+</html>
